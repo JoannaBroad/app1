@@ -1,0 +1,101 @@
+2016-10-12T15:33:30.681640+00:00 heroku[router]: at=info method=GET path="/assets/application-1d951023569b51582c97c9ab2740e389f060f23fc481c7f829a0382714995e28.js" host=debs-cards.herokuapp.com request_id=77652ede-7a62-4c50-8668-07004453bf32 fwd="81.98.129.137" dyno=web.1 connect=0ms service=1ms status=304 bytes=48
+2016-10-12T15:33:30.801486+00:00 heroku[router]: at=info method=GET path="/assets/coffee-b93c7f67a0ef71dab01bc206ffc8ca56c8b65ba278db43e911555ed4652a4cf9.jpg" host=debs-cards.herokuapp.com request_id=7fe0029d-1238-41a7-97a9-e372e711f875 fwd="81.98.129.137" dyno=web.1 connect=1ms service=8ms status=200 bytes=141946
+2016-10-12T15:33:30.412835+00:00 app[web.1]: I, [2016-10-12T15:33:30.412730 #3]  INFO -- : [4d9d90e2-77ac-4991-8df9-6a222f6931ee] Started GET "/" for 81.98.129.137 at 2016-10-12 15:33:30 +0000
+2016-10-12T15:33:30.420461+00:00 app[web.1]: I, [2016-10-12T15:33:30.420385 #3]  INFO -- : [4d9d90e2-77ac-4991-8df9-6a222f6931ee] Processing by StaticPagesController#index as HTML
+2016-10-12T15:33:30.431439+00:00 app[web.1]: I, [2016-10-12T15:33:30.431350 #3]  INFO -- : [4d9d90e2-77ac-4991-8df9-6a222f6931ee]   Rendering static_pages/index.html.erb within layouts/application
+2016-10-12T15:33:30.436940+00:00 app[web.1]: I, [2016-10-12T15:33:30.436855 #3]  INFO -- : [4d9d90e2-77ac-4991-8df9-6a222f6931ee]   Rendered static_pages/index.html.erb within layouts/application (5.3ms)
+2016-10-12T15:33:30.438439+00:00 app[web.1]: I, [2016-10-12T15:33:30.438377 #3]  INFO -- : [4d9d90e2-77ac-4991-8df9-6a222f6931ee] Completed 200 OK in 18ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+2016-10-12T15:33:31.851214+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=debs-cards.herokuapp.com request_id=556bfa5d-5fe6-4c58-94c4-086d5937d9ac fwd="81.98.129.137" dyno=web.1 connect=1ms service=2ms status=200 bytes=143
+2016-10-12T15:35:01.405256+00:00 heroku[api]: Deploy 70611ad by joanna.broad93@gmail.com
+2016-10-12T15:35:01.405256+00:00 heroku[api]: Release v22 created by joanna.broad93@gmail.com
+2016-10-12T15:35:01.739953+00:00 heroku[slug-compiler]: Slug compilation started
+2016-10-12T15:35:01.739958+00:00 heroku[slug-compiler]: Slug compilation finished
+2016-10-12T15:35:01.889354+00:00 heroku[web.1]: Restarting
+2016-10-12T15:35:01.890044+00:00 heroku[web.1]: State changed from up to starting
+2016-10-12T15:35:04.526951+00:00 heroku[web.1]: Starting process with command `bin/rails server -p 46618 -e production`
+2016-10-12T15:35:05.045764+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2016-10-12T15:35:05.735863+00:00 app[web.1]: - Gracefully stopping, waiting for requests to finish
+2016-10-12T15:35:05.736062+00:00 app[web.1]: === puma shutdown: 2016-10-12 15:35:05 +0000 ===
+2016-10-12T15:35:05.736064+00:00 app[web.1]: - Goodbye!
+2016-10-12T15:35:05.736133+00:00 app[web.1]: Exiting
+2016-10-12T15:35:05.883787+00:00 heroku[web.1]: Process exited with status 0
+2016-10-12T15:35:07.473891+00:00 app[web.1]: => Booting Puma
+2016-10-12T15:35:07.473915+00:00 app[web.1]: => Rails 5.0.0.1 application starting in production on http://0.0.0.0:46618
+2016-10-12T15:35:07.473916+00:00 app[web.1]: => Run `rails server -h` for more startup options
+2016-10-12T15:35:08.278925+00:00 app[web.1]: Puma starting in single mode...
+2016-10-12T15:35:08.278941+00:00 app[web.1]: * Version 3.6.0 (ruby 2.2.4-p230), codename: Sleepy Sunday Serenity
+2016-10-12T15:35:08.278943+00:00 app[web.1]: * Min threads: 5, max threads: 5
+2016-10-12T15:35:08.278943+00:00 app[web.1]: * Environment: production
+2016-10-12T15:35:08.279059+00:00 app[web.1]: * Listening on tcp://0.0.0.0:46618
+2016-10-12T15:35:08.279424+00:00 app[web.1]: Use Ctrl-C to stop
+2016-10-12T15:35:08.820019+00:00 heroku[web.1]: State changed from starting to up
+2016-10-12T15:35:09.925466+00:00 heroku[router]: at=info method=GET path="/" host=debs-cards.herokuapp.com request_id=14c9f0a0-18b8-4600-a16f-1bef39a7ab5b fwd="81.98.129.137" dyno=web.1 connect=1ms service=150ms status=500 bytes=1669
+2016-10-12T15:35:09.844079+00:00 app[web.1]: I, [2016-10-12T15:35:09.843932 #3]  INFO -- : [14c9f0a0-18b8-4600-a16f-1bef39a7ab5b] Started GET "/" for 81.98.129.137 at 2016-10-12 15:35:09 +0000
+2016-10-12T15:35:09.851626+00:00 app[web.1]: I, [2016-10-12T15:35:09.851528 #3]  INFO -- : [14c9f0a0-18b8-4600-a16f-1bef39a7ab5b] Processing by StaticPagesController#landing_page as HTML
+2016-10-12T15:35:09.888960+00:00 app[web.1]: D, [2016-10-12T15:35:09.888811 #3] DEBUG -- : [14c9f0a0-18b8-4600-a16f-1bef39a7ab5b]   [1m[36mProduct Load (4.8ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+2016-10-12T15:35:09.904313+00:00 app[web.1]: I, [2016-10-12T15:35:09.904190 #3]  INFO -- : [14c9f0a0-18b8-4600-a16f-1bef39a7ab5b]   Rendering static_pages/landing_page.html.erb within layouts/application
+2016-10-12T15:35:09.906060+00:00 app[web.1]: I, [2016-10-12T15:35:09.905978 #3]  INFO -- : [14c9f0a0-18b8-4600-a16f-1bef39a7ab5b]   Rendered static_pages/landing_page.html.erb within layouts/application (1.6ms)
+2016-10-12T15:35:09.906341+00:00 app[web.1]: I, [2016-10-12T15:35:09.906279 #3]  INFO -- : [14c9f0a0-18b8-4600-a16f-1bef39a7ab5b] Completed 500 Internal Server Error in 55ms (ActiveRecord: 20.8ms)
+2016-10-12T15:35:09.907536+00:00 app[web.1]: F, [2016-10-12T15:35:09.907468 #3] FATAL -- : [14c9f0a0-18b8-4600-a16f-1bef39a7ab5b]   
+2016-10-12T15:35:09.907600+00:00 app[web.1]: F, [2016-10-12T15:35:09.907543 #3] FATAL -- : [14c9f0a0-18b8-4600-a16f-1bef39a7ab5b] ActionView::Template::Error (undefined method `name' for nil:NilClass):
+2016-10-12T15:35:09.908128+00:00 app[web.1]: F, [2016-10-12T15:35:09.907741 #3] FATAL -- : [14c9f0a0-18b8-4600-a16f-1bef39a7ab5b]     1: <h1 class="title">Featured Product:</h1>
+2016-10-12T15:35:09.908271+00:00 app[web.1]: F, [2016-10-12T15:35:09.908131 #3] FATAL -- : [14c9f0a0-18b8-4600-a16f-1bef39a7ab5b]     2: <%= @featured_product.name %>
+2016-10-12T15:35:09.908321+00:00 app[web.1]: F, [2016-10-12T15:35:09.908257 #3] FATAL -- : [14c9f0a0-18b8-4600-a16f-1bef39a7ab5b]   
+2016-10-12T15:35:09.908374+00:00 app[web.1]: F, [2016-10-12T15:35:09.908322 #3] FATAL -- : [14c9f0a0-18b8-4600-a16f-1bef39a7ab5b] app/views/static_pages/landing_page.html.erb:2:in `_app_views_static_pages_landing_page_html_erb___3381099095859748105_70282569360820'
+2016-10-12T15:35:10.318019+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=debs-cards.herokuapp.com request_id=874eaa16-3c22-4a2f-b8a4-81ce364e0c10 fwd="81.98.129.137" dyno=web.1 connect=1ms service=2ms status=200 bytes=143
+2016-10-12T15:35:42.577271+00:00 heroku[router]: at=info method=GET path="/" host=debs-cards.herokuapp.com request_id=0ce2567f-dcc9-4755-8dc1-1f126b2d4ca8 fwd="81.98.129.137" dyno=web.1 connect=1ms service=24ms status=500 bytes=1669
+2016-10-12T15:35:42.548790+00:00 app[web.1]: I, [2016-10-12T15:35:42.548683 #3]  INFO -- : [0ce2567f-dcc9-4755-8dc1-1f126b2d4ca8] Started GET "/" for 81.98.129.137 at 2016-10-12 15:35:42 +0000
+2016-10-12T15:35:42.550104+00:00 app[web.1]: I, [2016-10-12T15:35:42.550037 #3]  INFO -- : [0ce2567f-dcc9-4755-8dc1-1f126b2d4ca8] Processing by StaticPagesController#landing_page as HTML
+2016-10-12T15:35:42.556518+00:00 app[web.1]: D, [2016-10-12T15:35:42.556411 #3] DEBUG -- : [0ce2567f-dcc9-4755-8dc1-1f126b2d4ca8]   [1m[36mProduct Load (4.6ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+2016-10-12T15:35:42.557572+00:00 app[web.1]: I, [2016-10-12T15:35:42.557519 #3]  INFO -- : [0ce2567f-dcc9-4755-8dc1-1f126b2d4ca8]   Rendering static_pages/landing_page.html.erb within layouts/application
+2016-10-12T15:35:42.558663+00:00 app[web.1]: I, [2016-10-12T15:35:42.558612 #3]  INFO -- : [0ce2567f-dcc9-4755-8dc1-1f126b2d4ca8]   Rendered static_pages/landing_page.html.erb within layouts/application (0.9ms)
+2016-10-12T15:35:42.558875+00:00 app[web.1]: I, [2016-10-12T15:35:42.558829 #3]  INFO -- : [0ce2567f-dcc9-4755-8dc1-1f126b2d4ca8] Completed 500 Internal Server Error in 9ms (ActiveRecord: 4.6ms)
+2016-10-12T15:35:42.560022+00:00 app[web.1]: F, [2016-10-12T15:35:42.559970 #3] FATAL -- : [0ce2567f-dcc9-4755-8dc1-1f126b2d4ca8]   
+2016-10-12T15:35:42.560127+00:00 app[web.1]: F, [2016-10-12T15:35:42.560047 #3] FATAL -- : [0ce2567f-dcc9-4755-8dc1-1f126b2d4ca8] ActionView::Template::Error (undefined method `name' for nil:NilClass):
+2016-10-12T15:35:42.560276+00:00 app[web.1]: F, [2016-10-12T15:35:42.560235 #3] FATAL -- : [0ce2567f-dcc9-4755-8dc1-1f126b2d4ca8]     1: <h1 class="title">Featured Product:</h1>
+2016-10-12T15:35:42.560329+00:00 app[web.1]: F, [2016-10-12T15:35:42.560290 #3] FATAL -- : [0ce2567f-dcc9-4755-8dc1-1f126b2d4ca8]     2: <%= @featured_product.name %>
+2016-10-12T15:35:42.560385+00:00 app[web.1]: F, [2016-10-12T15:35:42.560343 #3] FATAL -- : [0ce2567f-dcc9-4755-8dc1-1f126b2d4ca8]   
+2016-10-12T15:35:42.560439+00:00 app[web.1]: F, [2016-10-12T15:35:42.560399 #3] FATAL -- : [0ce2567f-dcc9-4755-8dc1-1f126b2d4ca8] app/views/static_pages/landing_page.html.erb:2:in `_app_views_static_pages_landing_page_html_erb___3381099095859748105_70282569360820'
+2016-10-12T15:35:42.972932+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=debs-cards.herokuapp.com request_id=4618ede1-e642-4dbc-b19e-5644fa25821e fwd="81.98.129.137" dyno=web.1 connect=1ms service=4ms status=304 bytes=48
+2016-10-12T15:37:40.576179+00:00 heroku[router]: at=info method=GET path="/products" host=debs-cards.herokuapp.com request_id=3218d808-06f2-41f3-8314-4313b13ca260 fwd="41.69.88.111" dyno=web.1 connect=1ms service=22ms status=200 bytes=3198
+2016-10-12T15:37:40.540807+00:00 app[web.1]: I, [2016-10-12T15:37:40.540714 #3]  INFO -- : [3218d808-06f2-41f3-8314-4313b13ca260] Started GET "/products" for 41.69.88.111 at 2016-10-12 15:37:40 +0000
+2016-10-12T15:37:40.542655+00:00 app[web.1]: I, [2016-10-12T15:37:40.542581 #3]  INFO -- : [3218d808-06f2-41f3-8314-4313b13ca260] Processing by ProductsController#index as HTML
+2016-10-12T15:37:40.545306+00:00 app[web.1]: I, [2016-10-12T15:37:40.545249 #3]  INFO -- : [3218d808-06f2-41f3-8314-4313b13ca260]   Rendering products/index.html.erb within layouts/application
+2016-10-12T15:37:40.547580+00:00 app[web.1]: D, [2016-10-12T15:37:40.547504 #3] DEBUG -- : [3218d808-06f2-41f3-8314-4313b13ca260]   [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+2016-10-12T15:37:40.554935+00:00 app[web.1]: I, [2016-10-12T15:37:40.554844 #3]  INFO -- : [3218d808-06f2-41f3-8314-4313b13ca260]   Rendered products/index.html.erb within layouts/application (9.4ms)
+2016-10-12T15:37:40.558665+00:00 app[web.1]: I, [2016-10-12T15:37:40.558590 #3]  INFO -- : [3218d808-06f2-41f3-8314-4313b13ca260] Completed 200 OK in 16ms (Views: 13.5ms | ActiveRecord: 0.9ms)
+2016-10-12T15:37:40.874447+00:00 heroku[router]: at=info method=GET path="/assets/application-33c3235c7a1b4c5762ceafa10919e0b2d96514ff390eccb12ce372fe9c64c30e.css" host=debs-cards.herokuapp.com request_id=ef8bce9e-dc29-48f1-88bd-375d51fc1bf6 fwd="41.69.88.111" dyno=web.1 connect=1ms service=3ms status=200 bytes=923
+2016-10-12T15:37:41.052077+00:00 heroku[router]: at=info method=GET path="/assets/application-1d951023569b51582c97c9ab2740e389f060f23fc481c7f829a0382714995e28.js" host=debs-cards.herokuapp.com request_id=6d89a364-b99a-44d0-abed-440bc5a3115c fwd="41.69.88.111" dyno=web.1 connect=1ms service=1ms status=304 bytes=48
+2016-10-12T15:37:42.316579+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=debs-cards.herokuapp.com request_id=95c2acd3-1804-4e54-aa97-0acf70c82876 fwd="41.69.88.111" dyno=web.1 connect=1ms service=2ms status=200 bytes=143
+2016-10-12T15:37:44.379725+00:00 heroku[router]: at=info method=GET path="/static_pages/about" host=debs-cards.herokuapp.com request_id=0ee6d3db-5b91-4d0d-bce5-37519e26e554 fwd="41.69.88.111" dyno=web.1 connect=1ms service=21ms status=200 bytes=4334
+2016-10-12T15:37:44.350610+00:00 app[web.1]: I, [2016-10-12T15:37:44.350465 #3]  INFO -- : [0ee6d3db-5b91-4d0d-bce5-37519e26e554] Started GET "/static_pages/about" for 41.69.88.111 at 2016-10-12 15:37:44 +0000
+2016-10-12T15:37:44.358202+00:00 app[web.1]: I, [2016-10-12T15:37:44.358056 #3]  INFO -- : [0ee6d3db-5b91-4d0d-bce5-37519e26e554] Processing by StaticPagesController#about as HTML
+2016-10-12T15:37:44.361007+00:00 app[web.1]: I, [2016-10-12T15:37:44.360930 #3]  INFO -- : [0ee6d3db-5b91-4d0d-bce5-37519e26e554]   Rendered static_pages/about.html.erb within layouts/application (0.8ms)
+2016-10-12T15:37:44.360045+00:00 app[web.1]: I, [2016-10-12T15:37:44.359974 #3]  INFO -- : [0ee6d3db-5b91-4d0d-bce5-37519e26e554]   Rendering static_pages/about.html.erb within layouts/application
+2016-10-12T15:37:44.362120+00:00 app[web.1]: I, [2016-10-12T15:37:44.362051 #3]  INFO -- : [0ee6d3db-5b91-4d0d-bce5-37519e26e554] Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+2016-10-12T15:37:45.615315+00:00 heroku[router]: at=info method=GET path="/static_pages/contact" host=debs-cards.herokuapp.com request_id=d0f87815-16ad-42a4-8a26-9f8a8de6f6bc fwd="41.69.88.111" dyno=web.1 connect=1ms service=29ms status=200 bytes=3292
+2016-10-12T15:37:45.580577+00:00 app[web.1]: I, [2016-10-12T15:37:45.580473 #3]  INFO -- : [d0f87815-16ad-42a4-8a26-9f8a8de6f6bc] Started GET "/static_pages/contact" for 41.69.88.111 at 2016-10-12 15:37:45 +0000
+2016-10-12T15:37:45.593315+00:00 app[web.1]: I, [2016-10-12T15:37:45.593205 #3]  INFO -- : [d0f87815-16ad-42a4-8a26-9f8a8de6f6bc] Processing by StaticPagesController#contact as HTML
+2016-10-12T15:37:45.595334+00:00 app[web.1]: I, [2016-10-12T15:37:45.595263 #3]  INFO -- : [d0f87815-16ad-42a4-8a26-9f8a8de6f6bc]   Rendering static_pages/contact.html.erb within layouts/application
+2016-10-12T15:37:45.596069+00:00 app[web.1]: I, [2016-10-12T15:37:45.596000 #3]  INFO -- : [d0f87815-16ad-42a4-8a26-9f8a8de6f6bc]   Rendered static_pages/contact.html.erb within layouts/application (0.6ms)
+2016-10-12T15:37:45.597695+00:00 app[web.1]: I, [2016-10-12T15:37:45.597621 #3]  INFO -- : [d0f87815-16ad-42a4-8a26-9f8a8de6f6bc] Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+2016-10-12T15:37:46.901034+00:00 heroku[router]: at=info method=GET path="/products" host=debs-cards.herokuapp.com request_id=065f6585-255a-4031-a256-a95946a43102 fwd="41.69.88.111" dyno=web.1 connect=7ms service=13ms status=200 bytes=3198
+2016-10-12T15:37:46.877864+00:00 app[web.1]: I, [2016-10-12T15:37:46.877759 #3]  INFO -- : [065f6585-255a-4031-a256-a95946a43102] Started GET "/products" for 41.69.88.111 at 2016-10-12 15:37:46 +0000
+2016-10-12T15:37:46.878931+00:00 app[web.1]: I, [2016-10-12T15:37:46.878814 #3]  INFO -- : [065f6585-255a-4031-a256-a95946a43102] Processing by ProductsController#index as HTML
+2016-10-12T15:37:46.880402+00:00 app[web.1]: I, [2016-10-12T15:37:46.880324 #3]  INFO -- : [065f6585-255a-4031-a256-a95946a43102]   Rendering products/index.html.erb within layouts/application
+2016-10-12T15:37:46.881972+00:00 app[web.1]: D, [2016-10-12T15:37:46.881916 #3] DEBUG -- : [065f6585-255a-4031-a256-a95946a43102]   [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+2016-10-12T15:37:46.883537+00:00 app[web.1]: I, [2016-10-12T15:37:46.883431 #3]  INFO -- : [065f6585-255a-4031-a256-a95946a43102] Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 1.0ms)
+2016-10-12T15:37:46.882532+00:00 app[web.1]: I, [2016-10-12T15:37:46.882471 #3]  INFO -- : [065f6585-255a-4031-a256-a95946a43102]   Rendered products/index.html.erb within layouts/application (2.0ms)
+2016-10-12T15:37:49.519622+00:00 heroku[router]: at=info method=GET path="/" host=debs-cards.herokuapp.com request_id=43721f4e-7252-4d54-bdcd-50d5a27fb626 fwd="41.69.88.111" dyno=web.1 connect=1ms service=66ms status=500 bytes=1669
+2016-10-12T15:37:49.452752+00:00 app[web.1]: I, [2016-10-12T15:37:49.452533 #3]  INFO -- : [43721f4e-7252-4d54-bdcd-50d5a27fb626] Started GET "/" for 41.69.88.111 at 2016-10-12 15:37:49 +0000
+2016-10-12T15:37:49.454096+00:00 app[web.1]: I, [2016-10-12T15:37:49.454031 #3]  INFO -- : [43721f4e-7252-4d54-bdcd-50d5a27fb626] Processing by StaticPagesController#landing_page as HTML
+2016-10-12T15:37:49.478393+00:00 app[web.1]: D, [2016-10-12T15:37:49.478247 #3] DEBUG -- : [43721f4e-7252-4d54-bdcd-50d5a27fb626]   [1m[36mProduct Load (22.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+2016-10-12T15:37:49.483189+00:00 app[web.1]: I, [2016-10-12T15:37:49.482681 #3]  INFO -- : [43721f4e-7252-4d54-bdcd-50d5a27fb626]   Rendering static_pages/landing_page.html.erb within layouts/application
+2016-10-12T15:37:49.493303+00:00 app[web.1]: I, [2016-10-12T15:37:49.493219 #3]  INFO -- : [43721f4e-7252-4d54-bdcd-50d5a27fb626]   Rendered static_pages/landing_page.html.erb within layouts/application (9.2ms)
+2016-10-12T15:37:49.496365+00:00 app[web.1]: I, [2016-10-12T15:37:49.496302 #3]  INFO -- : [43721f4e-7252-4d54-bdcd-50d5a27fb626] Completed 500 Internal Server Error in 42ms (ActiveRecord: 22.4ms)
+2016-10-12T15:37:49.500081+00:00 app[web.1]: F, [2016-10-12T15:37:49.499991 #3] FATAL -- : [43721f4e-7252-4d54-bdcd-50d5a27fb626]   
+2016-10-12T15:37:49.502453+00:00 app[web.1]: F, [2016-10-12T15:37:49.502389 #3] FATAL -- : [43721f4e-7252-4d54-bdcd-50d5a27fb626] ActionView::Template::Error (undefined method `name' for nil:NilClass):
+2016-10-12T15:37:49.502680+00:00 app[web.1]: F, [2016-10-12T15:37:49.502624 #3] FATAL -- : [43721f4e-7252-4d54-bdcd-50d5a27fb626]     1: <h1 class="title">Featured Product:</h1>
+2016-10-12T15:37:49.502747+00:00 app[web.1]: F, [2016-10-12T15:37:49.502700 #3] FATAL -- : [43721f4e-7252-4d54-bdcd-50d5a27fb626]     2: <%= @featured_product.name %>
+2016-10-12T15:37:49.502847+00:00 app[web.1]: F, [2016-10-12T15:37:49.502766 #3] FATAL -- : [43721f4e-7252-4d54-bdcd-50d5a27fb626]   
+2016-10-12T15:37:49.502924+00:00 app[web.1]: F, [2016-10-12T15:37:49.502867 #3] FATAL -- : [43721f4e-7252-4d54-bdcd-50d5a27fb626] app/views/static_pages/landing_page.html.erb:2:in `_app_views_static_pages_landing_page_html_erb___3381099095859748105_70282569360820'
