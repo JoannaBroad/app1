@@ -1,0 +1,101 @@
+2016-10-14T15:15:59.774056+00:00 app[web.1]: I, [2016-10-14T15:15:59.773983 #3]  INFO -- : [ca38d72d-0633-4726-9012-9452bfbf049a]   Rendering products/index.html.erb within layouts/application
+2016-10-14T15:15:59.791293+00:00 app[web.1]: I, [2016-10-14T15:15:59.791218 #3]  INFO -- : [ca38d72d-0633-4726-9012-9452bfbf049a]   Rendered products/index.html.erb within layouts/application (17.1ms)
+2016-10-14T15:15:59.792181+00:00 app[web.1]: F, [2016-10-14T15:15:59.792127 #3] FATAL -- : [ca38d72d-0633-4726-9012-9452bfbf049a]   
+2016-10-14T15:15:59.792233+00:00 app[web.1]: F, [2016-10-14T15:15:59.792182 #3] FATAL -- : [ca38d72d-0633-4726-9012-9452bfbf049a] ActionView::Template::Error (undefined method `color' for #<Product:0x007fa4173d6338>):
+2016-10-14T15:15:59.792448+00:00 app[web.1]: F, [2016-10-14T15:15:59.792396 #3] FATAL -- : [ca38d72d-0633-4726-9012-9452bfbf049a]     10:             <%= image_tag(product.image_url, class: "img-responsive") if product.image_url %>
+2016-10-14T15:15:59.792494+00:00 app[web.1]: F, [2016-10-14T15:15:59.792446 #3] FATAL -- : [ca38d72d-0633-4726-9012-9452bfbf049a]     11:             <p><%= product.description %></p>
+2016-10-14T15:15:59.792541+00:00 app[web.1]: F, [2016-10-14T15:15:59.792492 #3] FATAL -- : [ca38d72d-0633-4726-9012-9452bfbf049a]     12:             <p><%product.color%></p>
+2016-10-14T15:15:59.792584+00:00 app[web.1]: F, [2016-10-14T15:15:59.792539 #3] FATAL -- : [ca38d72d-0633-4726-9012-9452bfbf049a]     13:             <p><%product.price%></p>
+2016-10-14T15:15:59.792400+00:00 app[web.1]: F, [2016-10-14T15:15:59.792349 #3] FATAL -- : [ca38d72d-0633-4726-9012-9452bfbf049a]      9:             <h2><%= product.name %></h2>
+2016-10-14T15:15:59.792631+00:00 app[web.1]: F, [2016-10-14T15:15:59.792585 #3] FATAL -- : [ca38d72d-0633-4726-9012-9452bfbf049a]     14:                 <br>
+2016-10-14T15:15:59.792706+00:00 app[web.1]: F, [2016-10-14T15:15:59.792628 #3] FATAL -- : [ca38d72d-0633-4726-9012-9452bfbf049a]     15:                 <td><%= link_to 'Show', product %></td>
+2016-10-14T15:15:59.792751+00:00 app[web.1]: F, [2016-10-14T15:15:59.792705 #3] FATAL -- : [ca38d72d-0633-4726-9012-9452bfbf049a]   
+2016-10-14T15:15:59.792796+00:00 app[web.1]: F, [2016-10-14T15:15:59.792750 #3] FATAL -- : [ca38d72d-0633-4726-9012-9452bfbf049a] app/views/products/index.html.erb:12:in `block in _app_views_products_index_html_erb___1845076553918574087_70171371096520'
+2016-10-14T15:15:59.792839+00:00 app[web.1]: F, [2016-10-14T15:15:59.792794 #3] FATAL -- : [ca38d72d-0633-4726-9012-9452bfbf049a] app/views/products/index.html.erb:7:in `_app_views_products_index_html_erb___1845076553918574087_70171371096520'
+2016-10-14T15:16:01.263238+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=debs-cards.herokuapp.com request_id=87fe0502-ad97-4568-84be-7d3058ed53b2 fwd="41.69.88.111" dyno=web.1 connect=0ms service=1ms status=200 bytes=143
+2016-10-14T15:16:03.506791+00:00 heroku[router]: at=info method=GET path="/" host=debs-cards.herokuapp.com request_id=8cb0e144-7d85-46ec-ad46-487bccde0da8 fwd="41.69.88.111" dyno=web.1 connect=0ms service=14ms status=200 bytes=3074
+2016-10-14T15:16:03.491624+00:00 app[web.1]: I, [2016-10-14T15:16:03.491557 #3]  INFO -- : [8cb0e144-7d85-46ec-ad46-487bccde0da8] Started GET "/" for 41.69.88.111 at 2016-10-14 15:16:03 +0000
+2016-10-14T15:16:03.498611+00:00 app[web.1]: I, [2016-10-14T15:16:03.498552 #3]  INFO -- : [8cb0e144-7d85-46ec-ad46-487bccde0da8]   Rendering static_pages/landing_page.html.erb within layouts/application
+2016-10-14T15:16:03.499053+00:00 app[web.1]: I, [2016-10-14T15:16:03.498999 #3]  INFO -- : [8cb0e144-7d85-46ec-ad46-487bccde0da8]   Rendered static_pages/landing_page.html.erb within layouts/application (0.3ms)
+2016-10-14T15:16:03.497103+00:00 app[web.1]: D, [2016-10-14T15:16:03.497043 #3] DEBUG -- : [8cb0e144-7d85-46ec-ad46-487bccde0da8]   [1m[36mProduct Load (1.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+2016-10-14T15:16:03.492849+00:00 app[web.1]: I, [2016-10-14T15:16:03.492785 #3]  INFO -- : [8cb0e144-7d85-46ec-ad46-487bccde0da8] Processing by StaticPagesController#landing_page as HTML
+2016-10-14T15:16:03.502757+00:00 app[web.1]: I, [2016-10-14T15:16:03.502697 #3]  INFO -- : [8cb0e144-7d85-46ec-ad46-487bccde0da8] Completed 200 OK in 10ms (Views: 4.8ms | ActiveRecord: 1.1ms)
+2016-10-14T15:16:03.777337+00:00 heroku[router]: at=info method=GET path="/assets/application-33c3235c7a1b4c5762ceafa10919e0b2d96514ff390eccb12ce372fe9c64c30e.css" host=debs-cards.herokuapp.com request_id=447bd7c6-004c-47ee-87ca-70a2f88d2ae4 fwd="41.69.88.111" dyno=web.1 connect=0ms service=1ms status=200 bytes=923
+2016-10-14T15:16:03.966211+00:00 heroku[router]: at=info method=GET path="/assets/application-1d951023569b51582c97c9ab2740e389f060f23fc481c7f829a0382714995e28.js" host=debs-cards.herokuapp.com request_id=39365364-f149-47c2-9e7e-58458f882290 fwd="41.69.88.111" dyno=web.1 connect=0ms service=2ms status=200 bytes=46492
+2016-10-14T15:49:43.227280+00:00 heroku[web.1]: Idling
+2016-10-14T15:49:43.227946+00:00 heroku[web.1]: State changed from up to down
+2016-10-14T15:49:45.371389+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2016-10-14T15:49:45.897991+00:00 app[web.1]: - Gracefully stopping, waiting for requests to finish
+2016-10-14T15:49:45.898219+00:00 app[web.1]: === puma shutdown: 2016-10-14 15:49:45 +0000 ===
+2016-10-14T15:49:45.898259+00:00 app[web.1]: - Goodbye!
+2016-10-14T15:49:45.898382+00:00 app[web.1]: Exiting
+2016-10-14T15:49:46.068909+00:00 heroku[web.1]: Process exited with status 0
+2016-10-17T08:35:41.246160+00:00 heroku[web.1]: Unidling
+2016-10-17T08:35:41.246523+00:00 heroku[web.1]: State changed from down to starting
+2016-10-17T08:35:43.722920+00:00 heroku[web.1]: Starting process with command `bin/rails server -p 46282 -e production`
+2016-10-17T08:35:46.775779+00:00 app[web.1]: => Booting Puma
+2016-10-17T08:35:46.775820+00:00 app[web.1]: => Rails 5.0.0.1 application starting in production on http://0.0.0.0:46282
+2016-10-17T08:35:46.775821+00:00 app[web.1]: => Run `rails server -h` for more startup options
+2016-10-17T08:35:47.675317+00:00 app[web.1]: Puma starting in single mode...
+2016-10-17T08:35:47.675339+00:00 app[web.1]: * Version 3.6.0 (ruby 2.2.3-p173), codename: Sleepy Sunday Serenity
+2016-10-17T08:35:47.675341+00:00 app[web.1]: * Min threads: 5, max threads: 5
+2016-10-17T08:35:47.675342+00:00 app[web.1]: * Environment: production
+2016-10-17T08:35:47.675444+00:00 app[web.1]: * Listening on tcp://0.0.0.0:46282
+2016-10-17T08:35:47.675747+00:00 app[web.1]: Use Ctrl-C to stop
+2016-10-17T08:35:48.065836+00:00 heroku[web.1]: State changed from starting to up
+2016-10-17T08:35:49.407620+00:00 heroku[router]: at=info method=GET path="/" host=debs-cards.herokuapp.com request_id=67dfa4c1-e9e9-4024-81cc-86c379dd7094 fwd="81.98.129.137" dyno=web.1 connect=1ms service=85ms status=200 bytes=3074
+2016-10-17T08:35:49.351615+00:00 app[web.1]: I, [2016-10-17T08:35:49.351528 #3]  INFO -- : [67dfa4c1-e9e9-4024-81cc-86c379dd7094] Started GET "/" for 81.98.129.137 at 2016-10-17 08:35:49 +0000
+2016-10-17T08:35:49.355446+00:00 app[web.1]: I, [2016-10-17T08:35:49.355382 #3]  INFO -- : [67dfa4c1-e9e9-4024-81cc-86c379dd7094] Processing by StaticPagesController#landing_page as HTML
+2016-10-17T08:35:49.373191+00:00 app[web.1]: D, [2016-10-17T08:35:49.373098 #3] DEBUG -- : [67dfa4c1-e9e9-4024-81cc-86c379dd7094]   [1m[36mProduct Load (1.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+2016-10-17T08:35:49.388982+00:00 app[web.1]: I, [2016-10-17T08:35:49.388903 #3]  INFO -- : [67dfa4c1-e9e9-4024-81cc-86c379dd7094]   Rendering static_pages/landing_page.html.erb within layouts/application
+2016-10-17T08:35:49.389857+00:00 app[web.1]: I, [2016-10-17T08:35:49.389794 #3]  INFO -- : [67dfa4c1-e9e9-4024-81cc-86c379dd7094]   Rendered static_pages/landing_page.html.erb within layouts/application (0.7ms)
+2016-10-17T08:35:49.395558+00:00 app[web.1]: I, [2016-10-17T08:35:49.395487 #3]  INFO -- : [67dfa4c1-e9e9-4024-81cc-86c379dd7094] Completed 200 OK in 40ms (Views: 8.6ms | ActiveRecord: 8.8ms)
+2016-10-17T08:35:49.558963+00:00 heroku[router]: at=info method=GET path="/assets/application-33c3235c7a1b4c5762ceafa10919e0b2d96514ff390eccb12ce372fe9c64c30e.css" host=debs-cards.herokuapp.com request_id=908b3236-0919-4503-a3c4-1eec3d10c077 fwd="81.98.129.137" dyno=web.1 connect=1ms service=2ms status=200 bytes=923
+2016-10-17T08:35:49.761519+00:00 heroku[router]: at=info method=GET path="/assets/application-1d951023569b51582c97c9ab2740e389f060f23fc481c7f829a0382714995e28.js" host=debs-cards.herokuapp.com request_id=3b9ab341-1ddf-4c34-9062-5a5dd3dad882 fwd="81.98.129.137" dyno=web.1 connect=1ms service=5ms status=200 bytes=46492
+2016-10-17T08:35:50.679320+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=debs-cards.herokuapp.com request_id=1bd1c55f-4881-41da-a96b-714e38c382af fwd="81.98.129.137" dyno=web.1 connect=1ms service=2ms status=200 bytes=143
+2016-10-17T08:36:07.587018+00:00 heroku[router]: at=info method=GET path="/products" host=debs-cards.herokuapp.com request_id=7ac6a8f1-c7af-4c75-a559-4f9f5be20b47 fwd="81.98.129.137" dyno=web.1 connect=1ms service=29ms status=500 bytes=1669
+2016-10-17T08:36:07.555435+00:00 app[web.1]: I, [2016-10-17T08:36:07.555328 #3]  INFO -- : [7ac6a8f1-c7af-4c75-a559-4f9f5be20b47] Started GET "/products" for 81.98.129.137 at 2016-10-17 08:36:07 +0000
+2016-10-17T08:36:07.558183+00:00 app[web.1]: I, [2016-10-17T08:36:07.558117 #3]  INFO -- : [7ac6a8f1-c7af-4c75-a559-4f9f5be20b47] Processing by ProductsController#index as HTML
+2016-10-17T08:36:07.564977+00:00 app[web.1]: I, [2016-10-17T08:36:07.564903 #3]  INFO -- : [7ac6a8f1-c7af-4c75-a559-4f9f5be20b47]   Rendering products/index.html.erb within layouts/application
+2016-10-17T08:36:07.572067+00:00 app[web.1]: I, [2016-10-17T08:36:07.571968 #3]  INFO -- : [7ac6a8f1-c7af-4c75-a559-4f9f5be20b47]   Rendered products/index.html.erb within layouts/application (6.9ms)
+2016-10-17T08:36:07.568708+00:00 app[web.1]: D, [2016-10-17T08:36:07.568645 #3] DEBUG -- : [7ac6a8f1-c7af-4c75-a559-4f9f5be20b47]   [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+2016-10-17T08:36:07.572468+00:00 app[web.1]: I, [2016-10-17T08:36:07.572403 #3]  INFO -- : [7ac6a8f1-c7af-4c75-a559-4f9f5be20b47] Completed 500 Internal Server Error in 14ms (ActiveRecord: 1.0ms)
+2016-10-17T08:36:07.574435+00:00 app[web.1]: F, [2016-10-17T08:36:07.574351 #3] FATAL -- : [7ac6a8f1-c7af-4c75-a559-4f9f5be20b47]   
+2016-10-17T08:36:07.574630+00:00 app[web.1]: F, [2016-10-17T08:36:07.574525 #3] FATAL -- : [7ac6a8f1-c7af-4c75-a559-4f9f5be20b47] ActionView::Template::Error (undefined method `color' for #<Product:0x007fd182be9e88>):
+2016-10-17T08:36:07.574951+00:00 app[web.1]: F, [2016-10-17T08:36:07.574872 #3] FATAL -- : [7ac6a8f1-c7af-4c75-a559-4f9f5be20b47]      9:             <h2><%= product.name %></h2>
+2016-10-17T08:36:07.575052+00:00 app[web.1]: F, [2016-10-17T08:36:07.574988 #3] FATAL -- : [7ac6a8f1-c7af-4c75-a559-4f9f5be20b47]     10:             <%= image_tag(product.image_url, class: "img-responsive") if product.image_url %>
+2016-10-17T08:36:07.575163+00:00 app[web.1]: F, [2016-10-17T08:36:07.575075 #3] FATAL -- : [7ac6a8f1-c7af-4c75-a559-4f9f5be20b47]     11:             <p><%= product.description %></p>
+2016-10-17T08:36:07.575231+00:00 app[web.1]: F, [2016-10-17T08:36:07.575181 #3] FATAL -- : [7ac6a8f1-c7af-4c75-a559-4f9f5be20b47]     12:             <p><%product.color%></p>
+2016-10-17T08:36:07.575311+00:00 app[web.1]: F, [2016-10-17T08:36:07.575247 #3] FATAL -- : [7ac6a8f1-c7af-4c75-a559-4f9f5be20b47]     13:             <p><%product.price%></p>
+2016-10-17T08:36:07.575405+00:00 app[web.1]: F, [2016-10-17T08:36:07.575360 #3] FATAL -- : [7ac6a8f1-c7af-4c75-a559-4f9f5be20b47]     14:                 <br>
+2016-10-17T08:36:07.575496+00:00 app[web.1]: F, [2016-10-17T08:36:07.575424 #3] FATAL -- : [7ac6a8f1-c7af-4c75-a559-4f9f5be20b47]     15:                 <td><%= link_to 'Show', product %></td>
+2016-10-17T08:36:07.575607+00:00 app[web.1]: F, [2016-10-17T08:36:07.575553 #3] FATAL -- : [7ac6a8f1-c7af-4c75-a559-4f9f5be20b47]   
+2016-10-17T08:36:07.575696+00:00 app[web.1]: F, [2016-10-17T08:36:07.575625 #3] FATAL -- : [7ac6a8f1-c7af-4c75-a559-4f9f5be20b47] app/views/products/index.html.erb:12:in `block in _app_views_products_index_html_erb___3022659830606332836_70268909301880'
+2016-10-17T08:36:07.575763+00:00 app[web.1]: F, [2016-10-17T08:36:07.575717 #3] FATAL -- : [7ac6a8f1-c7af-4c75-a559-4f9f5be20b47] app/views/products/index.html.erb:7:in `_app_views_products_index_html_erb___3022659830606332836_70268909301880'
+2016-10-17T08:36:28.345895+00:00 heroku[router]: at=info method=GET path="/static_pages/products" host=debs-cards.herokuapp.com request_id=973817d0-6292-4f21-a1ce-a3be58aa8a89 fwd="81.98.129.137" dyno=web.1 connect=1ms service=10ms status=404 bytes=1744
+2016-10-17T08:36:28.330405+00:00 app[web.1]: I, [2016-10-17T08:36:28.330274 #3]  INFO -- : [973817d0-6292-4f21-a1ce-a3be58aa8a89] Started GET "/static_pages/products" for 81.98.129.137 at 2016-10-17 08:36:28 +0000
+2016-10-17T08:36:28.331672+00:00 app[web.1]: F, [2016-10-17T08:36:28.331617 #3] FATAL -- : [973817d0-6292-4f21-a1ce-a3be58aa8a89]   
+2016-10-17T08:36:28.331802+00:00 app[web.1]: F, [2016-10-17T08:36:28.331751 #3] FATAL -- : [973817d0-6292-4f21-a1ce-a3be58aa8a89] ActionController::RoutingError (No route matches [GET] "/static_pages/products"):
+2016-10-17T08:36:28.331925+00:00 app[web.1]: F, [2016-10-17T08:36:28.331823 #3] FATAL -- : [973817d0-6292-4f21-a1ce-a3be58aa8a89]   
+2016-10-17T08:36:28.331992+00:00 app[web.1]: F, [2016-10-17T08:36:28.331944 #3] FATAL -- : [973817d0-6292-4f21-a1ce-a3be58aa8a89] vendor/bundle/ruby/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+2016-10-17T08:36:28.332098+00:00 app[web.1]: F, [2016-10-17T08:36:28.332009 #3] FATAL -- : [973817d0-6292-4f21-a1ce-a3be58aa8a89] vendor/bundle/ruby/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+2016-10-17T08:36:28.332160+00:00 app[web.1]: F, [2016-10-17T08:36:28.332115 #3] FATAL -- : [973817d0-6292-4f21-a1ce-a3be58aa8a89] vendor/bundle/ruby/2.2.0/gems/railties-5.0.0.1/lib/rails/rack/logger.rb:36:in `call_app'
+2016-10-17T08:36:28.332296+00:00 app[web.1]: F, [2016-10-17T08:36:28.332177 #3] FATAL -- : [973817d0-6292-4f21-a1ce-a3be58aa8a89] vendor/bundle/ruby/2.2.0/gems/railties-5.0.0.1/lib/rails/rack/logger.rb:24:in `block in call'
+2016-10-17T08:36:28.332360+00:00 app[web.1]: F, [2016-10-17T08:36:28.332313 #3] FATAL -- : [973817d0-6292-4f21-a1ce-a3be58aa8a89] vendor/bundle/ruby/2.2.0/gems/activesupport-5.0.0.1/lib/active_support/tagged_logging.rb:70:in `block in tagged'
+2016-10-17T08:36:28.332450+00:00 app[web.1]: F, [2016-10-17T08:36:28.332376 #3] FATAL -- : [973817d0-6292-4f21-a1ce-a3be58aa8a89] vendor/bundle/ruby/2.2.0/gems/activesupport-5.0.0.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+2016-10-17T08:36:28.332516+00:00 app[web.1]: F, [2016-10-17T08:36:28.332467 #3] FATAL -- : [973817d0-6292-4f21-a1ce-a3be58aa8a89] vendor/bundle/ruby/2.2.0/gems/activesupport-5.0.0.1/lib/active_support/tagged_logging.rb:70:in `tagged'
+2016-10-17T08:36:28.332592+00:00 app[web.1]: F, [2016-10-17T08:36:28.332533 #3] FATAL -- : [973817d0-6292-4f21-a1ce-a3be58aa8a89] vendor/bundle/ruby/2.2.0/gems/railties-5.0.0.1/lib/rails/rack/logger.rb:24:in `call'
+2016-10-17T08:36:28.332666+00:00 app[web.1]: F, [2016-10-17T08:36:28.332619 #3] FATAL -- : [973817d0-6292-4f21-a1ce-a3be58aa8a89] vendor/bundle/ruby/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/request_id.rb:24:in `call'
+2016-10-17T08:36:28.333183+00:00 app[web.1]: F, [2016-10-17T08:36:28.333089 #3] FATAL -- : [973817d0-6292-4f21-a1ce-a3be58aa8a89] vendor/bundle/ruby/2.2.0/gems/rack-2.0.1/lib/rack/runtime.rb:22:in `call'
+2016-10-17T08:36:28.332725+00:00 app[web.1]: F, [2016-10-17T08:36:28.332682 #3] FATAL -- : [973817d0-6292-4f21-a1ce-a3be58aa8a89] vendor/bundle/ruby/2.2.0/gems/rack-2.0.1/lib/rack/method_override.rb:22:in `call'
+2016-10-17T08:36:28.333278+00:00 app[web.1]: F, [2016-10-17T08:36:28.333200 #3] FATAL -- : [973817d0-6292-4f21-a1ce-a3be58aa8a89] vendor/bundle/ruby/2.2.0/gems/activesupport-5.0.0.1/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+2016-10-17T08:36:28.333346+00:00 app[web.1]: F, [2016-10-17T08:36:28.333300 #3] FATAL -- : [973817d0-6292-4f21-a1ce-a3be58aa8a89] vendor/bundle/ruby/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/executor.rb:12:in `call'
+2016-10-17T08:36:28.333443+00:00 app[web.1]: F, [2016-10-17T08:36:28.333362 #3] FATAL -- : [973817d0-6292-4f21-a1ce-a3be58aa8a89] vendor/bundle/ruby/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/static.rb:136:in `call'
+2016-10-17T08:36:28.333504+00:00 app[web.1]: F, [2016-10-17T08:36:28.333460 #3] FATAL -- : [973817d0-6292-4f21-a1ce-a3be58aa8a89] vendor/bundle/ruby/2.2.0/gems/rack-2.0.1/lib/rack/sendfile.rb:111:in `call'
+2016-10-17T08:36:28.333665+00:00 app[web.1]: F, [2016-10-17T08:36:28.333604 #3] FATAL -- : [973817d0-6292-4f21-a1ce-a3be58aa8a89] vendor/bundle/ruby/2.2.0/gems/railties-5.0.0.1/lib/rails/engine.rb:522:in `call'
+2016-10-17T08:36:28.333746+00:00 app[web.1]: F, [2016-10-17T08:36:28.333685 #3] FATAL -- : [973817d0-6292-4f21-a1ce-a3be58aa8a89] vendor/bundle/ruby/2.2.0/gems/puma-3.6.0/lib/puma/configuration.rb:225:in `call'
+2016-10-17T08:36:28.333970+00:00 app[web.1]: F, [2016-10-17T08:36:28.333918 #3] FATAL -- : [973817d0-6292-4f21-a1ce-a3be58aa8a89] vendor/bundle/ruby/2.2.0/gems/puma-3.6.0/lib/puma/server.rb:578:in `handle_request'
+2016-10-17T08:36:28.334026+00:00 app[web.1]: F, [2016-10-17T08:36:28.333987 #3] FATAL -- : [973817d0-6292-4f21-a1ce-a3be58aa8a89] vendor/bundle/ruby/2.2.0/gems/puma-3.6.0/lib/puma/server.rb:415:in `process_client'
+2016-10-17T08:36:28.334140+00:00 app[web.1]: F, [2016-10-17T08:36:28.334043 #3] FATAL -- : [973817d0-6292-4f21-a1ce-a3be58aa8a89] vendor/bundle/ruby/2.2.0/gems/puma-3.6.0/lib/puma/server.rb:275:in `block in run'
+2016-10-17T08:36:28.334382+00:00 app[web.1]: F, [2016-10-17T08:36:28.334203 #3] FATAL -- : [973817d0-6292-4f21-a1ce-a3be58aa8a89] vendor/bundle/ruby/2.2.0/gems/puma-3.6.0/lib/puma/thread_pool.rb:116:in `call'
+2016-10-17T08:36:28.334643+00:00 app[web.1]: F, [2016-10-17T08:36:28.334549 #3] FATAL -- : [973817d0-6292-4f21-a1ce-a3be58aa8a89] vendor/bundle/ruby/2.2.0/gems/puma-3.6.0/lib/puma/thread_pool.rb:116:in `block in spawn_thread'
