@@ -6,4 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Product.create(:name => "seed-generated product", :description => "I also created this product without using the HTML form!")
+Product.create(:name => "Birthday card", :description => "dementions", :image_url => "birthday.jpg", :color => "purple")
+Product.create(:name => "Winnie the Pooh", :description => "dementions", :image_url => "winne.jpg", :color => "yellow")
+Product.create(:name => "Lady in Pink", :description => "dementions", :image_url => "lady.jpg", :color => "pink")
+Product.create(:name => "Mens On your Special Day", :description => "dementions", :image_url => "train.jpg", :color => "brown")
