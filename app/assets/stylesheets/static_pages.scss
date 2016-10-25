@@ -77,7 +77,7 @@ width: 50%;
 			padding-top: 3%;
 		}
 }
-
+carousel-caption
 .footer{
 	position: fixed;
 	background-color: #5fc1bb;
@@ -89,3 +89,11 @@ width: 50%;
 		text-align: center;
 	}
 }
+
+.carousel-caption{
+	top: 45%;
+	color: #ffffff;
+	font-size: 3em;
+	font-family: fantasy;
+	font-style: italic;
+	}
