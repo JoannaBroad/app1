@@ -38,14 +38,18 @@ h2{
 	}
 	ul{
 		margin-right: 6%;
-		display: block;
+		display: inline-block;
 		font-size: 1.5em;
 		li{
 			padding-left: 12px;
 		}
 	}
-	form{
-		align: center;
+	.search-box{
+		display: inline-block;
+		margin-left: 42%;
+		label{
+			visibility: hidden;
+		}
 	}
 }
 

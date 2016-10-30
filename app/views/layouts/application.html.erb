@@ -37,20 +37,21 @@
                         <%= link_to "Items", products_path %>
                     </li>
                 </ul>
-                <%= form_tag("/products", method: "get") do %>
-                <%= label_tag(:q, "Search for:") %>
-                <%= text_field_tag(:q) %>
-                <%= submit_tag("Search") %>
-                <% end %>
+                <div class="search-box">
+                    <%= form_tag("/products", method: "get") do %>
+                    <%= label_tag(:q, "Search for:") %>
+                    <%= text_field_tag(:q) %>
+                    <%= submit_tag("Search") %>
+                    <% end %>
+                </div>
+              </div>
+            </nav>
 
-            </div>
-        </nav>
+            <%= yield %>
 
-        <%= yield %>
+            <footer class="footer">
+                <p>&copy; 2016 Joanna Broad</p>
+            </footer>
 
-        <footer class="footer">
-            <p>&copy; 2016 Joanna Broad</p>
-        </footer>
-
-    </body>
-</html>
+        </body>
+    </html>
