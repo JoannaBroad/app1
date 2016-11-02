@@ -36,22 +36,21 @@
                     <li>
                         <%= link_to "Items", products_path %>
                     </li>
+                    <form class="navbar-form navbar-left" role="search">
+                        <%= form_tag("/products", method: "get") do %>
+                        <%= text_field_tag(:q) %>
+                        <%= submit_tag("Search") %>
+                        <% end %>
+                    </form>
                 </ul>
-                <div class="search-box">
-                    <%= form_tag("/products", method: "get") do %>
-                    <%= label_tag(:q, "Search for:") %>
-                    <%= text_field_tag(:q) %>
-                    <%= submit_tag("Search") %>
-                    <% end %>
-                </div>
-              </div>
-            </nav>
+            </div>
+        </nav>
 
-            <%= yield %>
+        <%= yield %>
 
-            <footer class="footer">
-                <p>&copy; 2016 Joanna Broad</p>
-            </footer>
+        <footer class="footer">
+            <p>&copy; 2016 Joanna Broad</p>
+        </footer>
 
-        </body>
-    </html>
+    </body>
+</html>
