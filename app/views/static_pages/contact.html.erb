@@ -1,7 +1,27 @@
-<div class="contact">
-  <h1 class="title">How to contact me.</h1>
-  <h2>Email</h2>
-  <p>Laboris cillum incididunt deserunt deserunt non aliquip quis laborum.</p>
-  <h2>esty</h2>
+<h1>Contact Us</h1>
+
+<%= flash[:notice] %>
+
+<%= form_tag("/static_pages/thank_you") do %>
+<div class="row">
+  <div class="col-md-4">
+    <div class="form-group">
+      <%= label_tag :name %>
+      <%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter Name" %>
+    </div>
+    <div class="form-group">
+      <%= label_tag :email, "Email Address" %>
+      <%= text_field_tag :email, nil, class: "form-control", placeholder: "Enter Email" %>
+    </div>
+    <div class="form-group">
+      <%= label_tag :message %>
+      <%= text_area_tag :message, nil, class: "form-control", placeholder: "Enter Message" %>
+    </div>
+  </div>
+</div>
+<%= submit_tag "Send" %>
+<% end %>
+
+  <h2>Or find me on Esty</h2>
   <p>Lorem reprehenderit non consequat anim velit dolore est excepteur aliquip velit ipsum.</p>
 </div>
