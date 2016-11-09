@@ -36,7 +36,7 @@
                     <li>
                         <%= link_to "Items", products_path %>
                     </li>
-                    <%= form_tag("/products", method: "get", class: "navbar-form navbar-right", role: "search") do %>
+                    <%= form_tag("/products", method: "get") do %>
                     <%= text_field_tag(:q, "", class: "form-control") %>
                     <%= submit_tag("Search", class: "btn btn-default") %>
                     <% end %>
