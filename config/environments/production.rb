@@ -72,7 +72,7 @@ config.action_mailer.smtp_settings = {
   authentication: "plain",
   enable_starttls_auto: true,
   user_name: ENV["GMAIL_SMTP_USER"],
-  password: ENV["GMAIL_SMTP_USER"]
+  password: ENV["GMAIL_SMTP_PASSWORD"]
 }
 
 
