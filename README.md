@@ -1,2 +1,1 @@
-Hello i am makeing my first app.
- testing
+Hello i am making my first app.
