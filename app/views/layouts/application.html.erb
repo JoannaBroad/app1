@@ -47,13 +47,19 @@
                     <%= text_field_tag(:q, "", class: "form-control") %>
                     <%= submit_tag("Search", class: "btn btn-default") %>
                     <% end %>
-              </ul>  
+              </ul>
         </div>
     </nav>
     <br>
     <br>
 
-    <p class="notice"><%= notice %></p>
+    <% if notice %>
+      <p id="notice" class="alert alert-info"><%= notice %></p>
+    <% end %>
+    <% if alert %>
+      <p class="alert alert-info"><%alert%></p>
+    <%end%>
+
     <%= yield %>
 
     <footer class="footer">
