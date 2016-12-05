@@ -15,7 +15,7 @@
   <%= @product.price %>
 <br><br>
   <strong>Colour:</strong>
-  <%= @product.colour %>
+  <%= @product.color %>
 <br><br>
   <strong>rating:</strong>
   <%= @product.highest_rating_comment.rating%>
@@ -24,6 +24,11 @@
 "<%= @product.highest_rating_comment.body%>"</p>
 </div>
 </div>
+
+<% if signed_in? %>
+ <%= render partial: "new_comment" %>
+<% end %>
+
 <div class="links" style="clear:both;">
   <%= link_to 'Edit', edit_product_path(@product) %>
   <%= link_to 'Back', products_path %>
