@@ -18,10 +18,10 @@
   <%= @product.color %>
 <br><br>
   <strong>rating:</strong>
-  <%= @product.highest_rating_comment.rating%>
+  <%= @product.highest_rating_comment.try(:rating)%>
 <br><br>
   <strong>comment:</strong>
-"<%= @product.highest_rating_comment.body%>"</p>
+"<%= @product.highest_rating_comment.try(:body)%>"</p>
 </div>
 </div>
 
