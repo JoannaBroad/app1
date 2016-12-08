@@ -17,17 +17,19 @@
   <strong>Colour:</strong>
   <%= @product.color %>
 <br><br>
-  <strong>rating:</strong>
-  <%= @product.highest_rating_comment.try(:rating)%>
-<br><br>
-  <strong>comment:</strong>
-"<%= @product.highest_rating_comment.try(:body)%>"</p>
-</div>
+<p>
+  Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div>
+</p>
 </div>
 
+<div class="comment col-md-12 col-xs-12">
 <% if signed_in? %>
  <%= render partial: "new_comment" %>
 <% end %>
+<%= render partial: "comments" %>
+</div>
+
+</div>
 
 <div class="links" style="clear:both;">
   <%= link_to 'Edit', edit_product_path(@product) %>
