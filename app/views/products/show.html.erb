@@ -15,7 +15,7 @@
   <%= @product.price %>
 <br><br>
   <strong>Colour:</strong>
-  <%= @product.colour %>
+  <%= @product.color %>
 <br><br>
 <p>
   Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div>
@@ -26,7 +26,9 @@
 <% if signed_in? %>
  <%= render partial: "new_comment" %>
 <% end %>
-<%= render partial: "comments" %>
+<%= will_paginate @comments %>
+    <%= render partial: "comments" %>
+<%= will_paginate @comments %>
 </div>
 
 </div>

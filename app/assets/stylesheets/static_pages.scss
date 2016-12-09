@@ -86,11 +86,12 @@ p {
 
 .footer {
 	position: fixed;
-	background-color: #5fc1bb;
 	bottom: 0;
+	background-color: #5fc1bb;
 	clear: both;
-	max-height: 30px;
-	min-width: 100%;
+	max-height: 40px;
+	width: 100%;
+ display: inline;
 
 	p {
 		text-align: center;
