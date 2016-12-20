@@ -50,7 +50,7 @@ h2 {
 			padding-right: 12px;
 		}
 
-		form{
+		form {
 			padding-right: 50px;
 		}
 	}
@@ -89,9 +89,10 @@ p {
 	bottom: 0;
 	background-color: #5fc1bb;
 	clear: both;
-	max-height: 40px;
+	left: 0;
 	width: 100%;
- display: inline;
+	display: inline;
+	height: 55px;
 
 	p {
 		text-align: center;
