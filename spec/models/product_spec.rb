@@ -4,7 +4,7 @@ describe Product do
 
   before do
     @product = Product.create!( name: "card")
-    @user = User.create!( email: "test@test.com", password: "testuser")
+    @user = User.create!( email: "test1@test.com", password: "testuser")
     @product.comments.create!( rating: 1, user: @user, body: "looks ok.")
     @product.comments.create!(rating: 3, user: @user, body: "cool")
     @product.comments.create!(rating: 5, user: @user, body: "Amazing!")
