@@ -1,7 +1,7 @@
 <div class="show-page">
 <p id="notice"><%= notice %></p>
 
-<%= image_tag(@product.image_url, class: "col-md-7 col-sm-7 col-xs-12") %>
+<%= image_tag(@product.image_url, class: "col-md-7 col-sm-7 col-xs-12 img-zoom") %>
 
 <div class="col-md-5 col-sm-5 col-xs-12" id="show-page">
 <p>
@@ -15,7 +15,7 @@
   <%= @product.price %>
 <br><hr>
   <strong>Colour:</strong>
-  <%= @product.colour %>
+  <%= @product.color %>
 <br><hr>
 <p>
   Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div>
