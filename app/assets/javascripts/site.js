@@ -14,7 +14,5 @@ $(document).on('turbolinks:load ajaxSuccess', function(){
     refreshRating();
 
     /* elevate zoom plugin*/
-    $(".img-zoom").elevateZoom({
-
-		});
+    $(".img-zoom").elevateZoom();
  });
