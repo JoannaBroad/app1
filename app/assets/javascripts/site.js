@@ -1,15 +1,20 @@
 var refreshRating = function() {
-    $('.rating').raty( { path: '/assets', scoreName: 'comment[rating]' });
-    $('.rated').raty({ path: '/assets',
-        readOnly: true,
-        score: function() {
-            return $(this).attr('data-score');
+     $('.rating').raty( { path: '/assets', scoreName: 'comment[rating]' });
+     $('.rated').raty({ path: '/assets',
+       readOnly: true,
+       score: function() {
+           return $(this).attr('data-score');
         }
-    });
+     });
 };
 
-$(document).on('turbolinks:load ajaxSuccess', function() {
+
+$(document).on('turbolinks:load ajaxSuccess', function(){
+    /* raty plugin */
     refreshRating();
 
-    $('.img-zoom').elevateZoom();
-});
+    /* elevate zoom plugin*/
+    $(".img-zoom").elevateZoom({
+
+		});
+ });
