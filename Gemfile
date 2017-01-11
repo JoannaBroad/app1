@@ -31,7 +31,7 @@ gem 'will_paginate', '~> 3.1.1'
 
 gem 'rails-controller-testing'
 
-gem 'brakeman', '~>3.4.1', :require => false 
+gem 'brakeman', '~>3.4.1', :require => false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -69,3 +69,5 @@ gem 'devise'
 gem 'stripe'
 
 gem 'cancancan', '~> 1.10'
+
+gem 'redis-rails'
