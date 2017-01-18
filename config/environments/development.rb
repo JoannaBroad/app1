@@ -66,4 +66,6 @@ config.action_mailer.smtp_settings = {
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
+config.app_generators.javascript_engine = :javascript
+
 end
