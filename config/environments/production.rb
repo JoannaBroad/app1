@@ -98,4 +98,10 @@ config.action_mailer.smtp_settings = {
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+
+config.web_socket_server_url = "wss://debs-cards.herokuapp.com/cable"
+config.action_cable.allowed_request_origins = ['https://debs-cards.herokuapp.com', 'http://debs-cards.herokuapp.com']
+
+
 end
