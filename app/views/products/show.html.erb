@@ -1,4 +1,4 @@
-<div class="show-page">
+<div class="show-page" data-product-id="<%= @product.id %>">
 <p id="notice"><%= notice %></p>
 <% cache @product do %>
 <%= image_tag(@product.image_url, class: "col-md-7 col-sm-7 col-xs-12 img-zoom") %>
